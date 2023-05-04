@@ -17,11 +17,11 @@ const Product: FC<ProductProps> = ({ product }) => {
 	const onBuy = () => {
 		if (isExist(products, product)) {
 			// eslint-disable-next-line
-			products.map(el => {
-				if (el.id === product.id) {
-					++el.count
-					el.totalCost = el.price * el.count
-					dispatch(updateCartCost(totalCost + el.price))
+			products.map(cartProduct => {
+				if (cartProduct.id === product.id && cartProduct.count < 99) {
+					++cartProduct.count
+					cartProduct.totalCost = cartProduct.price * cartProduct.count
+					dispatch(updateCartCost(totalCost + cartProduct.price))
 				}
 			})
 		} else {

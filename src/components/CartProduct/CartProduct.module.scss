@@ -80,12 +80,16 @@
 			flex-wrap: wrap;
 			align-items: center;
 			justify-content: center;
+
+			span {
+				text-align: center;
+			}
 		}
 		&__counter {
 			align-items: center;
 			justify-content: center;
 
-			flex-direction: column;
+			flex-direction: column-reverse;
 			gap: 15px;
 		}
 	}
