@@ -1,0 +1,56 @@
+.navbar {
+	min-height: 60px;
+	width: 100%;
+	padding: 15px 0;
+	margin-bottom: 15px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&__logo {
+		text-decoration: none;
+		color: #101010;
+		font-size: 25px;
+		font-weight: 700;
+		line-height: calc(30 / 25 * 100%);
+	}
+
+	&__links {
+		display: flex;
+		align-items: center;
+		column-gap: 45px;
+		list-style: none;
+
+		li {
+			position: relative;
+			cursor: pointer;
+
+			.navlink {
+				path {
+					transition: fill 0.2s ease-in-out;
+				}
+				&:hover {
+					path {
+						fill: darken(#838383, 20);
+					}
+				}
+			}
+
+			p {
+				position: absolute;
+				bottom: -2px;
+				left: 16px;
+
+				color: white;
+				background: #ffa542;
+				padding: 1px 6px;
+				border-radius: 50%;
+
+				font-weight: 500;
+				font-size: 15px;
+				line-height: calc(18 / 15 * 100%);
+			}
+		}
+	}
+}

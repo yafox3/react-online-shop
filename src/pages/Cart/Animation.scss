@@ -1,0 +1,9 @@
+.product-exit {
+	opacity: 1;
+	transform: translateX(0);
+}
+.product-exit-active {
+	opacity: 0;
+	transform: translateX(-350px);
+	transition: opacity 500ms ease-in, transform 1.5s ease-in-out;
+}
