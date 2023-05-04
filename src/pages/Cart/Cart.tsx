@@ -7,7 +7,6 @@ import { updateCartCost } from '../../store/action-creators/cart'
 import './Animation.scss'
 import styles from './Cart.module.scss'
 
-
 const Cart: FC = () => {
 	const { products, totalCost } = useTypedSelector(state => state.cart)
 	const [cost, setCost] = useState(totalCost)

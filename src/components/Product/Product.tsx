@@ -27,7 +27,6 @@ const Product: FC<ProductProps> = ({ product }) => {
 		} else {
 			dispatch(addToCart(product))
 		}
-		console.log(totalCost)
 	}
 
 	return (
