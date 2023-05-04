@@ -5,6 +5,7 @@
 }
 
 .cart {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -15,10 +16,12 @@
 		flex-direction: column;
 		flex: 1 1 auto;
 		gap: 20px;
-		max-height: 55vh;
+		max-height: 60vh;
 		overflow-y: scroll;
 		border-radius: 30px;
 		padding-right: 10px;
+
+		margin-bottom: 30px;
 
 		&::-webkit-scrollbar {
 			width: 5px;
@@ -38,7 +41,7 @@
 	@media (max-width: 800px) {
 		& {
 			justify-content: center;
-			margin-bottom: 20px;
+			margin-bottom: 50px;
 		}
 	}
 }

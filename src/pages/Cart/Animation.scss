@@ -4,6 +4,6 @@
 }
 .product-exit-active {
 	opacity: 0;
-	transform: translateX(-350px);
-	transition: opacity 500ms ease-in, transform 1.5s ease-in-out;
+	transform: translateX(-150px);
+	transition: opacity .3s ease-in, transform .3s ease-in-out;
 }
