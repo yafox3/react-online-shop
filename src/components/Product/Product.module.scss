@@ -50,6 +50,10 @@
 		}
 	}
 
+	&_hidden {
+		display: none;
+	}
+
 	&__rate_buy {
 		display: flex;
 		align-items: center;
@@ -81,3 +85,5 @@
 		}
 	}
 }
+
+

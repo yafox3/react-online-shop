@@ -1,0 +1,21 @@
+.to-cart-animation {
+	animation: fly 2s 1;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 999;
+	pointer-events: none;
+}
+
+@keyframes fly {
+	0% {
+		transform: translate(0vw, 28vh);
+		opacity: 0.5;
+		width: 100%;
+	}
+	100% {
+		transform: translate(85vw, 0vh);
+		opacity: 0;
+		width: 0%;
+	}
+}
